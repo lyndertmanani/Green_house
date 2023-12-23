@@ -20,13 +20,21 @@ Make sure you have the following installed:
 git clone git@github.com:lyndertmanani/Green_house.git
  
  2. Navigate to the project directory:
+
+```bash
  cd Green_house
 
  3. Install dependencies:
+
+```bash
  npm install
  
 ### Running the Application
-Once the dependencies are installed, you can start the development server. Run the following command:
+
+Once the dependencies are installed, you can start the development server. 
+Run the following command:
+
+```bash
 npm run dev
 
 
