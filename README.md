@@ -1,41 +1,39 @@
-# Green House System
+# Green House System Readme
 
-Welcome to the Green House System! This project is built using React and Vite to help you manage your greenhouse effectively.
+## Welcome to the Green House System!
 
-## Getting Started
-
-Follow the steps below to run the Green House System on your local machine.
+The Green House System is a project designed to help you effectively manage your greenhouse. It is built using React and Vite. Follow the steps below to run the system on your local machine.
 
 ### Prerequisites
 
-Make sure you have the following installed:
-
-- Node.js: [Download and Install Node.js](https://nodejs.org/)
+Ensure that you have Node.js installed on your machine. You can download and install Node.js [here](https://nodejs.org/).
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the Repository:**
+   
+   ```bash
+   git clone git@github.com:lyndertmanani/Green_house.git
+   ```
 
-```bash
-git clone git@github.com:lyndertmanani/Green_house.git
- 
- 2. Navigate to the project directory:
+2. **Navigate to the Project Directory:**
+   
+   ```bash
+   cd Green_house
+   ```
 
-```bash
- cd Green_house
+3. **Install Dependencies:**
+   
+   ```bash
+   npm install
+   ```
 
- 3. Install dependencies:
-
-```bash
- npm install
- 
 ### Running the Application
 
-Once the dependencies are installed, you can start the development server. 
-Run the following command:
+Once the dependencies are installed, start the development server by running the following command:
 
 ```bash
 npm run dev
+```
 
-
-
+This will launch the Green House System on your local machine. Happy gardening! 🌱
