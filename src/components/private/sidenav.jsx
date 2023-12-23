@@ -1,9 +1,8 @@
 const Sidenav = () => {
     return (
         <>
-        <div className="min-h-screen flex-col flex-auto flex-shrink-0 antialiase hidden lg:flex text-gray-800">
-        <div className="fixed flex flex-col top-0 left-0 w-64  h-full ">
-           
+       <div className="min-h-screen flex-col flex-auto flex-shrink-0 antialias hidden lg:flex text-gray-800 fixed">
+        <div className="fixed flex flex-col top-0 left-0 w-52  h-full ">
           <div className="overflow-y-auto overflow-x-hidden flex-grow">
             <ul className="flex flex-col py-4 space-y-1">
               <li className="px-5">
