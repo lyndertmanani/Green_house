@@ -12,10 +12,12 @@
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "@sira-ui/tailwind": "^0.11.8",
+    "boxicons": "^2.1.4",
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.21.0",
+    "react-slick": "^0.29.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

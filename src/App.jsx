@@ -15,6 +15,7 @@ import Login from "./pages/Authentication/login";
 import Signup from "./pages/Authentication/signup";
 import Settings from "./pages/Authentication/data/settings";
 import Dash from "./pages/Authentication/data/data.dashboard";
+import Datadawer from "./pages/Authentication/data/data.dawer";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
     <Route path="contact" element={<Contact/>}/>
     <Route path="Settings" element={<Settings/>}/>
     <Route path="Dash" element={<Dash/>}/>
+    <Route path="datadawer" element={<Datadawer/>}/>
   </Route>)
 );
 

@@ -16,7 +16,7 @@ import {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   
     return (
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden fixed w-full">
       <Navbar onMenuOpenChange={setIsMenuOpen} >
         <NavbarContent> 
           <NavbarBrand>
