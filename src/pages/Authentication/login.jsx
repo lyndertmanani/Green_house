@@ -7,7 +7,7 @@ const Login = () => {
      <div className="w-full h-screen bg-no-repeat bg-cover bg-center ">
         
       <div className="flex justify-center items-center pt-40 mx-5">
-          <form action="./Dash" method="get" className="w-full max-w-sm">
+          <form action="./dash" method="get" className="w-full max-w-sm">
             <div className="flex items-center justify-center mb-4">
               <h1 className="text-white justify-center text-5xl leading-tighter font-bold">Green House</h1>
                {/* <img src="../../assets/icons/pa sho yo-ticket_wht.png" className="h-14" alt="PashoyoMw_logo">   */}
