@@ -12,6 +12,7 @@
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "@sira-ui/tailwind": "^0.11.8",
+    "@supabase/supabase-js": "^2.39.7",
     "boxicons": "^2.1.4",
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",

@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { Input} from "@nextui-org/react";
+ 
 
 const Login = () => {
+ 
     return (
      <>
+     
      <div className="w-full h-screen bg-no-repeat bg-cover bg-center ">
         
       <div className="flex justify-center items-center pt-40 mx-5">
