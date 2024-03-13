@@ -15,7 +15,7 @@ const BaseLayout = () => {
   const isContactPage = location.pathname === "/contact";
   const isDatadawerPage = location.pathname === "/datadawer";
   return (
-    <div>
+    <>
       {!isLoginPage && !isSignUpPage && !isHomePage &&  !isDocPage && !isAboutPage && !isContactPage &&<Sidenav/>}
       {!isLoginPage && !isSignUpPage && !isDashPage && !isDatadawerPage &&<MainNav/>}
       {!isLoginPage && !isSignUpPage && !isHomePage &&  !isDocPage && !isAboutPage && !isContactPage &&  <Topnav/>}
@@ -23,7 +23,7 @@ const BaseLayout = () => {
         <Outlet />
       </main>
       {!isDashPage&& !isDatadawerPage &&<Footer/>}
-    </div>
+    </>
   );
 };
 

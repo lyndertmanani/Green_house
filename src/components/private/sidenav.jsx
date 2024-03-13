@@ -10,9 +10,15 @@ import {
 } from "@nextui-org/react";
  
  
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 
 const Sidenav = () => {
+  let navigate = useNavigate()
+function handleLogout(){
+  sessionStorage.removeItem('token')
+  navigate('/login')
+}
+
     return (
         <>
        <div className="min-h-screen flex-col flex-auto flex-shrink-0 antialias hidden lg:flex text-gray-800 fixed">
@@ -40,14 +46,7 @@ const Sidenav = () => {
                   <span className="ml-2 text-sm tracking-wide truncate">Data Dawer</span>
                 </NavLink>
               </li>
-              <li>
-                <a href="#" className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#070707] text-gray-50  duration-700  pr-6">
-                  <span className="inline-flex justify-center items-center ml-4">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                  </span>
-                  <span className="ml-2 text-sm tracking-wide truncate">Messages</span>
-                </a>
-              </li>
+               
               
               <li className="px-5">
                 <div className="flex flex-row items-center h-8">
@@ -88,7 +87,7 @@ const Sidenav = () => {
                 </a>
               </li>
               <li>
-                <a href="./login" className="relative flex flex-row items-center h-11 focus:outline-none border-b border-transparent hover:border-green-700   hover:bg-[#070707] text-gray-50  duration-700  pr-6">
+                <a onClick={handleLogout} className="relative flex flex-row items-center h-11 focus:outline-none border-b border-transparent hover:border-green-700   hover:bg-[#070707] text-gray-50  duration-700  pr-6">
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
                   </span>

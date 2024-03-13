@@ -1,5 +1,7 @@
+// import App from "../../../App";
+const Logdata =({ token }) =>{
+  const username = token && token.user && token.user.user_metadata ? token.user.user_metadata.Username : '';
 
-const Logdata =() =>{
     return (
       <>
       <div className='px-2 ml-0 lg:ml-60  text-green-700'>
@@ -12,7 +14,7 @@ const Logdata =() =>{
        {/* Wearther-humidity */}
        <div className="bg-[#0c0c0c] rounded h-16 w-full duration-700">
         <section className='p-2'>
-         <h1 className='text-xl font-bold'>Username</h1>
+         <h1 className='text-xl font-bold'> {username}</h1>
          <p className='text-sm text-[#3a3a3a]'>employees role / duty</p>
          </section>
        </div>
