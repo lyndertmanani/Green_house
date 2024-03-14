@@ -14,11 +14,12 @@ const BaseLayout = () => {
   const isAboutPage = location.pathname === "/about";
   const isContactPage = location.pathname === "/contact";
   const isDatadawerPage = location.pathname === "/datadawer";
+  const isSettingUpPage = location.pathname ==="/settings"
   return (
     <>
-      {!isLoginPage && !isSignUpPage && !isHomePage &&  !isDocPage && !isAboutPage && !isContactPage &&<Sidenav/>}
-      {!isLoginPage && !isSignUpPage && !isDashPage && !isDatadawerPage &&<MainNav/>}
-      {!isLoginPage && !isSignUpPage && !isHomePage &&  !isDocPage && !isAboutPage && !isContactPage &&  <Topnav/>}
+      {!isLoginPage && !isSignUpPage && !isHomePage &&  !isDocPage && !isAboutPage && !isContactPage &&  <Sidenav/>}
+      {!isLoginPage && !isSignUpPage && !isDashPage && !isDatadawerPage && !isSettingUpPage &&<MainNav/>}
+      {!isLoginPage && !isSignUpPage && !isHomePage &&  !isDocPage && !isAboutPage && !isContactPage &&!isSettingUpPage &&  <Topnav/>}
       <main>
         <Outlet />
       </main>

@@ -16,6 +16,7 @@ import Signup from './pages/Authentication/signup';
 import Settings from './pages/Authentication/data/settings';
 import Dash from './pages/Authentication/data/data.dashboard';
 import Datadawer from './pages/Authentication/data/data.dawer';
+ 
 
 function App() {
   const [token, setToken] = useState(false);
@@ -42,7 +43,7 @@ function App() {
         <Route path="Login" element={<Login setToken={setToken} />} />
         <Route path="Signup" element={<Signup />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="Settings" element={<Settings />} />
+        <Route path="Settings" element={<Settings  token={token} />} />
         {token ?<Route path="dash" element={<Dash token={token} />} /> : ''}
         {token ? <Route path="datadawer" element={<Datadawer />} /> : ''}
       </Route>
